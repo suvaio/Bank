@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="./js/web3.min.js"></script>
+	<script src="./js/jquery-3.2.1.slim.min.js"></script>
+	<link rel="stylesheet" href="./css/alertable.css">
+	<!--script src="./js/jquery.alertable.js"></script-->
+
+	<script type="text/javascript">
+	document.onreadystatechange = function(e)
+    {
+		if (document.readyState === 'complete')
+			{
+				hideBankDetailsFunction();
+			}
+	};
+     </script>
+</head>
+
+<body>
+<img id="loader" src="./img/lg.double-ring-spinner.gif">
+<script src="./js/jquery-2.2.4.min.js"></script>
+<!--script src="./js/jquery-3.2.1.slim.min.js"></script-->
+<script src="./js/jquery.alertable.min.js"></script>
+
+    <div class="container">
+        
+        
+		<table style="width:100%" id="AccountTable">
+		<h2 id="user">User Details</h2>
+		<br>
+			<tr>
+				<td>
+					 <h3>User Account</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					 <label for="uName" class="col-lg-2 control-label">User Name :</label>
+				</td>
+				<td>
+					<input id="uName" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					 <label for="uPasscode" class="col-lg-2 control-label">Pass Code :</label>
+				</td>
+				<td>
+					<input id="uPasscode" type="password">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<label id="info2Lable" class="col-lg-2 control-label">please create account your personal account </label>
+		<button id="createUserAcc">Create</button>
+		<br>
+		</div>
+		
+		
+		<div class="banktable" id="banktable">
+		<label id="addressLable" class="col-lg-2 control-label">User Address :  </label>
+		<h1>Bank Details</h2>
+		
+		<br>
+		<table style="width:100%">
+          <tr>
+            <td>
+                <label for="bName" class="col-lg-2 control-label">Bank Name :</label>
+            </td>
+            <td>
+                 <input id="bName" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="aNum" class="col-lg-2 control-label">Account Number:</label>
+            </td>
+            <td>
+                 <input id="aNum" type="text">
+            </td>
+          </tr>
+           <tr>
+            <td>
+                <label id="balanceLable" for="balance" class="col-lg-2 control-label">Balance :</label>
+            </td>
+            <td>
+                 <input id="balance" type="text">
+            </td>
+          </tr>
+        </table>
+        <br>
+
+		<input type="radio" id="addBalance" name="radioGroup" value="0" class="col-lg-2 control-label"> Add
+		<input type="radio" id="checkBalance" name="radioGroup" value="1" checked class="col-lg-2 control-label"> Check
+        <br>
+
+		<button id="submit"> Submit </button>
+    </div>
+
+   
+
+    <script src="./js/employee.js">
+    </script>
+
+</body>
+</html>
